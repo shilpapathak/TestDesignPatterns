@@ -4,11 +4,13 @@ namespace Singleton
 {
     /// <summary>
     /// Customer class 
+    ///  The Singleton pattern simply uses a private constructor and
+    ///  a static readonly instance variable that is lazily initialized. Thread safety is guaranteed by the compiler.
     /// </summary>
     class Customer
     {
         private static Customer _customer;
-        protected Customer()
+        private Customer()
         {
             
         }
